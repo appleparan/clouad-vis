@@ -1,0 +1,77 @@
+
+[flake8]
+################### PROGRAM ################################
+
+# Specify the number of subprocesses that Flake8 will use to run checks in parallel.
+jobs = auto
+
+################### OUTPUT #################################
+
+########## Verbosity ##########
+
+# Increase the verbosity of Flake8’s output.
+verbose = 0
+# Decrease the verbosity of Flake8’s output.
+quiet = 0
+
+
+########## Formatting ##########
+
+# Select the formatter used to display errors to the user.
+format = pylint
+
+# docstring format:
+docstring_style=google
+
+# Print the total number of errors.
+count = True
+# Print the source code generating the error/warning in question.
+show-source = True
+# Count the number of occurrences of each error/warning code and print a report.
+statistics = True
+
+# Set the maximum length that any line (with some exceptions) may be.
+max-line-length = 120
+# Set the maximum allowed McCabe complexity value for a block of code.
+max-complexity = 18
+
+ignore =
+    W503  # Line break before binary operator
+    E203  # Whitespace before ‘,’, ‘;’, or ‘:’
+    E221  # Multiple spaces before operator
+    C901  # Function is too complex
+    C408  # Unnecessary <dict/list/tuple> call - rewrite as a literal.
+    E741  # Do not use variables named ‘l’, ‘O’, or ‘I’
+    C407  # Unnecessary <dict/list> comprehension
+    B017  # Line length is over maximum allowed length
+    F811  # Redefinition of unused `name` from line `N`
+    F401  # Module imported but unused
+    W504  # Line break occurred after a binary operator
+    F841  # Local variable name is assigned to but never used
+    F403  # from module import *
+    E501  # Line too long
+    E133  # closing bracket is missing indentation
+
+# E/W  - PEP8 errors/warnings (pycodestyle)
+# F    - linting errors (pyflakes)
+# C    - McCabe complexity error (mccabe)
+select = B,C,E,F,W,T4,B9
+
+exclude =
+    git
+    __pycache__
+    data/*
+    notebooks/*
+    logs/*
+    **/__pycache__
+
+# Provide a comma-separate list of glob patterns to include for checks.
+filename =
+    *.py
+
+per-file-ignores =
+  **/__init__.py:F401,F403,E402
+  **/configs/**.py:F401,E402
+  configs/**.py:F401,E402
+  **/tests/config/**.py:F401,E402
+  tests/config/**.py:F401,E402
