@@ -6,7 +6,7 @@ license = "Apache License 2.0"
 authors = ["Jongsu Liam Kim <jongsukim8@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = ">=3.8,<3.11"
+python = ">=3.9,<3.11"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.1.2"
