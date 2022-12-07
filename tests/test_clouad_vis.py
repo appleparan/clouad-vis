@@ -1,4 +1,4 @@
-from template import __version__
+from clouad_vis import __version__
 
 
 def test_version():

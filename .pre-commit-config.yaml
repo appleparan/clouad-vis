@@ -48,20 +48,6 @@ repos:
 
   - repo: local
     hooks:
-      - id: mypy
-        name: mypy
-        entry: poetry run mypy
-        exclude: |
-          (?x)(
-              ^tests/|
-              ^scripts.py
-          )
-        types: [python]
-        args: [--strict]
-        language: system
-
-  - repo: local
-    hooks:
     - id: darglint
       name: darglint
       entry: poetry run darglint

@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "template"
+name = "clouad-vis"
 version = "0.1.0"
 description = "Description"
 license = "Apache License 2.0"

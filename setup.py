@@ -3,16 +3,15 @@
 from distutils.core import setup
 
 setup(
-    name="template",
+    name="clouad-vis",
     packages=[],
     version="0.1.0",
     description="Description",
     author="Jongsu Kim",
     license="BSD",
     author_email="jongsukim8@gmail.com",
-    url="https://github.com/USERNAME/REPO",
+    url="https://github.com/appleparan/clouad-vis",
     keywords=[
-        "template",
         "package",
     ],
     python_requires=">=3.8",
