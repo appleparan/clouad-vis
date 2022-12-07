@@ -7,7 +7,6 @@ authors = ["Jongsu Liam Kim <jongsukim8@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.11"
-requests = "^2.28.1"
 aiohttp = "^3.8.3"
 cchardet = "^2.1.7"
 aiodns = "^3.0.0"
