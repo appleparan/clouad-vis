@@ -5,4 +5,5 @@ org = "my-org"
 bucket = "my-bucket"
 
 [datasets]
-iris = "iris.csv"
+iris = "sample/iris.csv"
+test = "sample/test.csv"
